@@ -1,1 +1,425 @@
-# Clinica-sonrisa-Puertollano
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clínica Dental Puertollano - Clínica Sonrisa Río</title>
+  <meta name="description" content="Clínica Sonrisa Río en Puertollano — odontología general, implantes, ortodoncia, estética dental, endodoncia, periodoncia, urgencias y más." />
+  <meta property="og:title" content="Clínica Sonrisa Río - Puertollano" />
+  <meta property="og:description" content="Servicios odontológicos integrales: implantes, ortodoncia, estética, endodoncia y urgencias en Puertollano." />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="Clínica Sonrisa Río" />
+
+  <style>
+    :root{
+      --accent:#0172a8;
+      --muted:#6b7280;
+      --bg:#fbfdff;
+      --card:#ffffff;
+      --radius:12px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f1724;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #f6fbff 0%, var(--bg) 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:82px;height:82px;
+      background:linear-gradient(135deg,#a6e1ff,#0172a8);
+      border-radius:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:18px;
+      box-shadow:0 6px 18px rgba(1,38,56,0.08);
+    }
+    h1{margin:0;font-size:22px}
+    p.lead{margin:4px 0 12px;color:var(--muted)}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:20px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 6px 18px rgba(2,6,23,0.06);
+    }
+
+    nav.services-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    nav.services-list a{
+      background:#f3f9ff;
+      color:var(--accent);
+      padding:8px 12px;border-radius:999px;text-decoration:none;font-size:13px;
+    }
+
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-title h2{font-size:18px;margin:0}
+    ul.service-details{padding-left:18px;margin:0}
+    ul.service-details li{margin:8px 0;color: #12202b}
+
+    .contact-box{display:flex;flex-direction:column;gap:10px}
+    .contact-row{display:flex;align-items:center;gap:8px}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600;
+    }
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center;padding:14px}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .grid{grid-template-columns:1fr; padding-bottom:20px}
+      .logo{width:64px;height:64px}
+    }
+
+    /* FAQ simple */
+    .faq-item{margin-bottom:10px}
+    .faq-q{font-weight:600}
+    .badge{font-size:12px;background:#eef6fb;color:var(--accent);padding:6px 8px;border-radius:8px}
+    .team-list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0}
+    .team-member{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:12px;background:#e6f4fb;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+    small.muted{color:var(--muted)}
+    .pill{background:#f2f6f8;padding:6px 10px;border-radius:999px;font-size:13px}
+    code.inline{background:#0f1724;color:#fff;padding:2px 6px;border-radius:6px;font-size:12px}
+  </style>
+
+  <!-- JSON-LD (Schema.org) básico -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Dentist",
+    "name":"Clínica Sonrisa Río",
+    "description":"Clínica dental ubicada en Puertollano que ofrece odontología general, implantes, ortodoncia, estética dental, endodoncia, periodoncia y urgencias.",
+    "telephone":"+34 926 00 11 22",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Calle Mayor, 12",
+      "addressLocality":"Puertollano",
+      "addressRegion":"Ciudad Real",
+      "postalCode":"13500",
+      "addressCountry":"ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 38.689, "longitude": -3.819 },
+    "openingHours":"Mo-Fr 09:00-20:00, Sa 09:00-14:00",
+    "url":"https://tu-dominio-ejemplo.com",
+    "image":"https://via.placeholder.com/800x600.png?text=Cl%C3%ADnica+Sonrisa+R%C3%ADo"
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">SR</div>
+      <div>
+        <h1>Clínica Sonrisa Río — Puertollano</h1>
+        <p class="lead">Odontología integral, implantes, ortodoncia y estética. Tratamientos personalizados con tecnología digital.</p>
+        <nav class="services-list" aria-label="Servicios rápidos">
+          <a href="#implantes">Implantes</a>
+          <a href="#ortodoncia">Ortodoncia</a>
+          <a href="#estetica">Estética</a>
+          <a href="#endodoncia">Endodoncia</a>
+          <a href="#urgencias">Urgencias</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="grid" role="main">
+      <!-- Columna principal -->
+      <div>
+        <section id="sobre" class="card" aria-labelledby="sobre-title">
+          <div class="section-title">
+            <h2 id="sobre-title">Sobre Clínica Sonrisa Río</h2>
+            <span class="pill">Puertollano, Ciudad Real</span>
+          </div>
+          <p>Clínica Sonrisa Río es un centro dental moderno en Puertollano especializado en atención integral: prevención, diagnóstico 3D, tratamientos conservadores y restauradores, odontología estética y manejo de urgencias. Nuestro equipo combina experiencia y tecnología digital para ofrecer planes de tratamiento personalizados y confort durante la visita.</p>
+        </section>
+
+        <section id="servicios" class="card" aria-labelledby="servicios-title" style="margin-top:14px">
+          <div class="section-title">
+            <h2 id="servicios-title">Servicios (listado amplio)</h2>
+            <small class="muted">Hacemos todo lo habitual en una clínica dental moderna</small>
+          </div>
+
+          <article id="odontologia-general">
+            <h3>Odontología General y Preventiva</h3>
+            <ul class="service-details">
+              <li>Revisiones y chequeos periódicos</li>
+              <li>Diagnóstico con radiografías digitales</li>
+              <li>Profilaxis / limpieza profesional y tartrectomía</li>
+              <li>Educación en higiene oral, selladores y flúor</li>
+              <li>Control y seguimiento de pacientes pediátricos</li>
+            </ul>
+          </article>
+
+          <article id="endodoncia" style="margin-top:10px">
+            <h3>Endodoncia (tratamientos de conductos)</h3>
+            <ul class="service-details">
+              <li>Endodoncia convencional con localización microscópica</li>
+              <li>Retratamientos y manejo de reabsorciones</li>
+              <li>Apicectomía (cuando procede)</li>
+              <li>Uso de microscopio y sistemas mecanizados</li>
+            </ul>
+          </article>
+
+          <article id="periodoncia" style="margin-top:10px">
+            <h3>Periodoncia</h3>
+            <ul class="service-details">
+              <li>Tratamiento de gingivitis y periodontitis</li>
+              <li>Raspado y alisado radicular</li>
+              <li>Mantenimiento periodontal (recalls periódicos)</li>
+              <li>Cirugía periodontal regenerativa y estética</li>
+            </ul>
+          </article>
+
+          <article id="implantes" style="margin-top:10px">
+            <h3>Implantología</h3>
+            <ul class="service-details">
+              <li>Implantes dentales unitarios y arcos completos</li>
+              <li>Carga inmediata cuando es posible</li>
+              <li>Elevación de seno maxilar y regeneración ósea (GBR)</li>
+              <li>Planificación digital con escáner intraoral y CBCT</li>
+            </ul>
+          </article>
+
+          <article id="protesica" style="margin-top:10px">
+            <h3>Prótesis y Rehabilitación</h3>
+            <ul class="service-details">
+              <li>Prótesis fija (coronas, puentes)</li>
+              <li>Prótesis removible (parciales y completas)</li>
+              <li>Prostodoncia sobre implantes</li>
+              <li>Pruebas estéticas y ajustado oclusal</li>
+            </ul>
+          </article>
+
+          <article id="ortodoncia" style="margin-top:10px">
+            <h3>Ortodoncia</h3>
+            <ul class="service-details">
+              <li>Brackets metálicos y estéticos</li>
+              <li>Alineadores transparentes (Invisalign / alternativas)</li>
+              <li>Ortodoncia infantil y ortopedia dentofacial</li>
+              <li>Retenedores y mantenimiento post-tratamiento</li>
+            </ul>
+          </article>
+
+          <article id="estetica" style="margin-top:10px">
+            <h3>Odontología Estética</h3>
+            <ul class="service-details">
+              <li>Blanqueamiento dental (en clínica y domiciliario)</li>
+              <li>Carillas de composite y porcelana</li>
+              <li>Diseño digital de sonrisa (Digital Smile Design)</li>
+              <li>Contorneado y estética gingival</li>
+            </ul>
+          </article>
+
+          <article id="cirugia" style="margin-top:10px">
+            <h3>Cirugía Oral</h3>
+            <ul class="service-details">
+              <li>Extracciones simples y complejas</li>
+              <li>Manejo de quistes y biopsias</li>
+              <li>Sedación consciente para pacientes ansiosos</li>
+              <li>Tratamiento de traumatismos dentales</li>
+            </ul>
+          </article>
+
+          <article id="odontopediatria" style="margin-top:10px">
+            <h3>Odontopediatría</h3>
+            <ul class="service-details">
+              <li>Atención a bebés, niños y adolescentes</li>
+              <li>Sellado de fisuras y flúor tópicos</li>
+              <li>Tratamientos conservadores y pulpotomías</li>
+            </ul>
+          </article>
+
+          <article id="odontologia-restauradora" style="margin-top:10px">
+            <h3>Odontología Restauradora</h3>
+            <ul class="service-details">
+              <li>Empastes adhesivos estéticos (composite)</li>
+              <li>Incrustaciones y onlays</li>
+              <li>Rehabilitación de dientes muy destruidos</li>
+            </ul>
+          </article>
+
+          <article id="tec" style="margin-top:10px">
+            <h3>Tecnología y Diagnóstico</h3>
+            <ul class="service-details">
+              <li>Escáner intraoral 3D</li>
+              <li>Tomografía Cone Beam (CBCT) para planificación</li>
+              <li>Radiografías digitales y fotografía intraoral</li>
+              <li>Impresión 3D y taller protésico digital</li>
+            </ul>
+          </article>
+
+          <article id="otros" style="margin-top:10px">
+            <h3>Otros Servicios y Protocolos</h3>
+            <ul class="service-details">
+              <li>Atención a urgencias dentales 24/7 (teléfono de guardia)</li>
+              <li>Manejo del dolor y fármacos responsables</li>
+              <li>Protección de datos y consentimiento informado</li>
+              <li>Planes de financiación y presupuesto sin compromiso</li>
+              <li>Teleconsulta para valoración previa</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="faq" class="card" style="margin-top:14px" aria-labelledby="faq-title">
+          <div class="section-title"><h2 id="faq-title">Preguntas frecuentes</h2></div>
+          <div class="faq-item">
+            <div class="faq-q">¿Hacen implantes si no tengo suficiente hueso?</div>
+            <div class="faq-a">Sí: planificamos con CBCT y ofrecemos injerto óseo, elevación de seno y técnicas de regeneración para poder colocar implantes cuando sea clínicamente posible.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Aceptan niños y primeras visitas?</div>
+            <div class="faq-a">Sí. Hacemos revisiones infantiles, consejos de prevención y tratamientos adaptados a cada edad.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Tienen opciones de financiación?</div>
+            <div class="faq-a">Sí. Ofrecemos opciones de fraccionamiento y presupuestos personalizados. Pregunta en recepción para las condiciones.</div>
+          </div>
+        </section>
+
+        <section id="testimonios" class="card" style="margin-top:14px" aria-labelledby="testimonios-title">
+          <div class="section-title"><h2 id="testimonios-title">Testimonios</h2></div>
+          <blockquote>
+            "Gran trato y profesionalidad. Me hicieron un implante y el proceso fue perfecto." — María G., Puertollano
+          </blockquote>
+          <blockquote style="margin-top:8px">
+            "Mis hijos están encantados; la pediatra es fantástica con los peques." — José R.
+          </blockquote>
+        </section>
+      </div>
+
+      <!-- Columna lateral -->
+      <aside>
+        <div class="card contact-box" aria-labelledby="contacto-title">
+          <div class="section-title">
+            <h2 id="contacto-title">Contacto & Reserva</h2>
+          </div>
+          <div>
+            <div class="contact-row"><strong>Dirección:</strong>&nbsp;<span> C/ Mayor, 12 — 13500 Puertollano (Ciudad Real)</span></div>
+            <div class="contact-row"><strong>Teléfono:</strong>&nbsp;<a href="tel:+34926001122">+34 926 00 11 22</a></div>
+            <div class="contact-row"><strong>Email:</strong>&nbsp;<a href="mailto:info@sonrisario-puertollano.es">info@sonrisario-puertollano.es</a></div>
+            <div class="contact-row"><strong>Horario:</strong>&nbsp;<span>Lu–Vi 09:00–20:00 · Sáb 09:00–14:00</span></div>
+          </div>
+
+          <div style="margin-top:10px" class="cta-row">
+            <a class="btn" href="tel:+34926001122">Llamar ahora</a>
+            <a class="btn" style="background:#06a76b" href="#contact-form">Pedir cita</a>
+          </div>
+
+          <div style="margin-top:12px">
+            <small class="muted">Aceptamos tarjetas y financiación. Consulta condiciones en recepción.</small>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px" aria-labelledby="equipo-title">
+          <div class="section-title">
+            <h2 id="equipo-title">Equipo</h2>
+            <small class="muted">Profesionales colegiados</small>
+          </div>
+          <ul class="team-list">
+            <li class="team-member">
+              <div class="avatar">DR</div>
+              <div>
+                <div><strong>Dr. Alberto Ruiz</strong></div>
+                <div class="muted">Especialista en Implantología y Cirugía Oral</div>
+              </div>
+            </li>
+            <li class="team-member">
+              <div class="avatar">MA</div>
+              <div>
+                <div><strong>Dra. Marta Álvarez</strong></div>
+                <div class="muted">Ortodoncia y Odontopediatría</div>
+              </div>
+            </li>
+            <li class="team-member">
+              <div class="avatar">LG</div>
+              <div>
+                <div><strong>Laura Gómez</strong></div>
+                <div class="muted">Higienista dental</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px" aria-labelledby="mapa-title">
+          <div class="section-title">
+            <h2 id="mapa-title">Ubicación</h2>
+          </div>
+          <!-- Iframe de mapa (sustituye por tu embed de Google Maps) -->
+          <div style="border-radius:8px;overflow:hidden">
+            <iframe
+              title="Mapa Puertollano"
+              src="https://www.google.com/maps?q=Puertollano,+Calle+Mayor+12&output=embed"
+              style="width:100%;height:200px;border:0"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <small class="muted" style="display:block;margin-top:8px">Cómo llegar desde la estación y aparcamiento público en la misma calle.</small>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">
+            <h2>Reservar cita (formulario)</h2>
+          </div>
+
+          <!-- Formulario sin backend: sustituye la acción por tu endpoint o usa GitHub Actions / Netlify Forms -->
+          <form id="contact-form" action="#" onsubmit="alert('Formulario de ejemplo: añade acción backend o usa Netlify/Forms.'); return false;">
+            <label style="display:block;margin-bottom:6px"><small>Nombre</small>
+              <input required name="nombre" type="text" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef6">
+            </label>
+            <label style="display:block;margin-bottom:6px"><small>Teléfono</small>
+              <input required name="telefono" type="tel" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef6">
+            </label>
+            <label style="display:block;margin-bottom:6px"><small>Motivo</small>
+              <select name="motivo" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #e6eef6">
+                <option>Revisión / limpieza</option>
+                <option>Dolor / urgencia</option>
+                <option>Implante / prótesis</option>
+                <option>Ortodoncia</option>
+                <option>Estética / blanqueamiento</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <div style="margin-top:8px">
+              <button class="btn" type="submit">Enviar petición</button>
+              <button type="reset" style="margin-left:8px;padding:10px 14px;border-radius:10px;border:1px solid #e6eef6;background:white">Limpiar</button>
+            </div>
+            <small class="muted"
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <strong>Clínica Sonrisa Río</strong> — C/ Mayor 12, 13500 Puertollano · Tel. <a href="tel:+34926001122">+34 926 00 11 22</a></div>
+      <div style="margin-top:6px"><small class="muted">Diseño base para GitHub Pages — personaliza imágenes, textos y enlaces antes de publicar.</small></div>
+    </footer>
+  </div>
+</body>
+</html>
